@@ -8,145 +8,245 @@
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_sp3hk"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_n31ie"]
+font_size = 32
+
 [node name="Points" type="Panel" unique_id=2097312209]
-offset_top = 136.0
-offset_right = 1152.0
-offset_bottom = 648.0
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.79
+offset_bottom = 0.07998657
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("1_n31ie")
 
-[node name="Panel" type="HBoxContainer" parent="." unique_id=1398932214]
+[node name="Panel" type="HSplitContainer" parent="." unique_id=502687125]
 layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 23.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 1144.0
+offset_bottom = 456.0
+split_offsets = PackedInt32Array(0, 0, 0, 0, 0, 0)
 
 [node name="Guide" type="VBoxContainer" parent="Panel" unique_id=1992383149]
 layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
 
 [node name="Label" type="Label" parent="Panel/Guide" unique_id=632794195]
 layout_mode = 2
+size_flags_vertical = 3
 text = "Pepe el grillo"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="HSeparator" type="HSeparator" parent="Panel/Guide" unique_id=1060395861]
 layout_mode = 2
 
 [node name="Label2" type="Label" parent="Panel/Guide" unique_id=1320195597]
 layout_mode = 2
+size_flags_vertical = 3
 text = "Jose la hormiga"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="HSeparator2" type="HSeparator" parent="Panel/Guide" unique_id=189695742]
 layout_mode = 2
 
 [node name="Label3" type="Label" parent="Panel/Guide" unique_id=81417115]
 layout_mode = 2
+size_flags_vertical = 3
 text = "Jose la hormiga"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="HSeparator3" type="HSeparator" parent="Panel/Guide" unique_id=541385082]
 layout_mode = 2
 
 [node name="Label4" type="Label" parent="Panel/Guide" unique_id=726485790]
 layout_mode = 2
+size_flags_vertical = 3
 text = "Jose la hormiga"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="VSeparator" type="VSeparator" parent="Panel" unique_id=1617852384]
+propagate_maximum_size = true
 layout_mode = 2
+size_flags_horizontal = 0
 
 [node name="Option1" type="VBoxContainer" parent="Panel" unique_id=1573008675]
+modulate = Color(1, 0, 0.016666412, 1)
 layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
 
 [node name="Label" type="Label" parent="Panel/Option1" unique_id=1806166619]
 layout_mode = 2
+size_flags_vertical = 3
 text = "Opcion 1"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="HSeparator" type="HSeparator" parent="Panel/Option1" unique_id=1136191659]
 layout_mode = 2
 
 [node name="1" type="CheckBox" parent="Panel/Option1" unique_id=1905255387]
 layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
 button_group = SubResource("ButtonGroup_3d3xj")
+icon_alignment = 1
 
 [node name="HSeparator2" type="HSeparator" parent="Panel/Option1" unique_id=1846337287]
 layout_mode = 2
 
 [node name="2" type="CheckBox" parent="Panel/Option1" unique_id=819436328]
 layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
 button_group = SubResource("ButtonGroup_n31ie")
+icon_alignment = 1
 
 [node name="HSeparator3" type="HSeparator" parent="Panel/Option1" unique_id=427614721]
 layout_mode = 2
 
 [node name="3" type="CheckBox" parent="Panel/Option1" unique_id=936019027]
 layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
 button_group = SubResource("ButtonGroup_sp3hk")
+icon_alignment = 1
 
 [node name="VSeparator2" type="VSeparator" parent="Panel" unique_id=266421804]
+propagate_maximum_size = true
 layout_mode = 2
+size_flags_horizontal = 0
 
 [node name="Option2" type="VBoxContainer" parent="Panel" unique_id=270270345]
+modulate = Color(1, 0.98333335, 0, 1)
 layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
 
 [node name="Label" type="Label" parent="Panel/Option2" unique_id=1439646452]
 layout_mode = 2
+size_flags_vertical = 3
 text = "Opcion 2"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="HSeparator" type="HSeparator" parent="Panel/Option2" unique_id=134398528]
 layout_mode = 2
 
 [node name="1" type="CheckBox" parent="Panel/Option2" unique_id=661580897]
 layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
 button_group = SubResource("ButtonGroup_3d3xj")
+icon_alignment = 1
 
 [node name="HSeparator2" type="HSeparator" parent="Panel/Option2" unique_id=93458445]
 layout_mode = 2
 
 [node name="2" type="CheckBox" parent="Panel/Option2" unique_id=1686738328]
 layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
 button_group = SubResource("ButtonGroup_n31ie")
+icon_alignment = 1
 
 [node name="HSeparator3" type="HSeparator" parent="Panel/Option2" unique_id=885703675]
 layout_mode = 2
 
 [node name="3" type="CheckBox" parent="Panel/Option2" unique_id=1426899482]
 layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
 button_group = SubResource("ButtonGroup_sp3hk")
+icon_alignment = 1
 
 [node name="VSeparator3" type="VSeparator" parent="Panel" unique_id=116753490]
+propagate_maximum_size = true
 layout_mode = 2
+size_flags_horizontal = 0
 
 [node name="Option3" type="VBoxContainer" parent="Panel" unique_id=208746955]
+modulate = Color(0.083333254, 1, 0, 1)
 layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
 
 [node name="Label" type="Label" parent="Panel/Option3" unique_id=1351586900]
 layout_mode = 2
+size_flags_vertical = 3
 text = "Opcion 3"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="HSeparator" type="HSeparator" parent="Panel/Option3" unique_id=2010793230]
 layout_mode = 2
 
 [node name="1" type="CheckBox" parent="Panel/Option3" unique_id=2117640810]
 layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
 button_group = SubResource("ButtonGroup_3d3xj")
+icon_alignment = 1
 
 [node name="HSeparator2" type="HSeparator" parent="Panel/Option3" unique_id=164984977]
 layout_mode = 2
 
 [node name="2" type="CheckBox" parent="Panel/Option3" unique_id=2096081141]
 layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
 button_group = SubResource("ButtonGroup_n31ie")
+icon_alignment = 1
 
 [node name="HSeparator3" type="HSeparator" parent="Panel/Option3" unique_id=1376560650]
 layout_mode = 2
 
 [node name="3" type="CheckBox" parent="Panel/Option3" unique_id=373830618]
 layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
 button_group = SubResource("ButtonGroup_sp3hk")
-
-[node name="VSeparator4" type="VSeparator" parent="Panel" unique_id=1585187706]
-layout_mode = 2
+icon_alignment = 1
 
 [node name="PointCount" type="Label" parent="." unique_id=1832004883]
 layout_mode = 0
-offset_left = 400.0
-offset_top = 72.0
-offset_right = 440.0
-offset_bottom = 95.0
+offset_left = 8.0
+offset_top = 464.0
+offset_right = 1144.0
+offset_bottom = 509.0
 text = "5"
+label_settings = SubResource("LabelSettings_n31ie")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="." unique_id=1806952744]
+layout_mode = 0
+offset_top = 448.0
+offset_right = 1152.0
+offset_bottom = 472.0

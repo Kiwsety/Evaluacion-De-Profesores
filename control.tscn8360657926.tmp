@@ -5,12 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://db6t1u11y157f" path="res://points.tscn" id="3_ee4bf"]
 
 [node name="Root" type="Control" unique_id=1868849122]
-process_priority = -1
 layout_mode = 3
-anchor_top = 0.22200002
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -143.85602
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0fbet")
@@ -19,8 +17,6 @@ script = ExtResource("1_0fbet")
 layout_mode = 0
 
 [node name="Points" parent="." unique_id=1793561398 instance=ExtResource("3_ee4bf")]
-layout_mode = 1
-anchor_top = 0.20987654
-anchor_bottom = 1.0
-offset_bottom = 0.0
-metadata/_edit_use_anchors_ = true
+layout_mode = 0
+offset_top = 0.0
+offset_bottom = 512.0
