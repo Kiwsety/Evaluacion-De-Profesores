@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://qowb0vyg0cs8"]
 
 [ext_resource type="Script" uid="uid://dq7fhp7xedee3" path="res://control.gd" id="1_0fbet"]
+[ext_resource type="PackedScene" uid="uid://c7kxx0j4kkjjt" path="res://teacher.tscn" id="2_qtu10"]
+[ext_resource type="PackedScene" uid="uid://db6t1u11y157f" path="res://points.tscn" id="3_ee4bf"]
 
 [node name="Root" type="Control" unique_id=1868849122]
 layout_mode = 3
@@ -11,65 +13,8 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0fbet")
 
-[node name="Teacher" type="Panel" parent="." unique_id=513282063]
-z_index = -1
+[node name="Teacher" parent="." unique_id=1363017926 instance=ExtResource("2_qtu10")]
 layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 128.0
 
-[node name="Name" type="LineEdit" parent="Teacher" unique_id=1195119120]
+[node name="Points" parent="." unique_id=1793561398 instance=ExtResource("3_ee4bf")]
 layout_mode = 0
-offset_left = 8.0
-offset_top = 8.0
-offset_right = 448.0
-offset_bottom = 48.0
-placeholder_text = "nombre y apellido"
-
-[node name="Year" type="LineEdit" parent="Teacher" unique_id=741395880]
-layout_mode = 0
-offset_left = 456.0
-offset_top = 8.0
-offset_right = 576.0
-offset_bottom = 48.0
-placeholder_text = "año y curso"
-
-[node name="Teacher Selector" type="OptionButton" parent="Teacher" unique_id=1098339484]
-layout_mode = 0
-offset_left = 584.0
-offset_top = 8.0
-offset_right = 1144.0
-offset_bottom = 48.0
-selected = 0
-item_count = 1
-popup/item_0/text = "Maria Vasquez 5°3"
-popup/item_0/id = 0
-
-[node name="Add" type="Button" parent="Teacher" unique_id=1872989489]
-layout_mode = 0
-offset_left = 584.0
-offset_top = 64.0
-offset_right = 653.0
-offset_bottom = 95.0
-text = "Agregar"
-
-[node name="Guardar" type="Button" parent="Teacher" unique_id=828566000]
-layout_mode = 0
-offset_left = 664.0
-offset_top = 64.0
-offset_right = 744.0
-offset_bottom = 95.0
-text = "Guardar"
-
-[node name="Eliminar" type="Button" parent="Teacher" unique_id=1470155784]
-layout_mode = 0
-offset_left = 752.0
-offset_top = 64.0
-offset_right = 872.0
-offset_bottom = 95.0
-text = "Eliminar"
-
-[node name="Panel" type="PanelContainer" parent="." unique_id=660837688]
-layout_mode = 0
-offset_top = 136.0
-offset_right = 1152.0
-offset_bottom = 648.0

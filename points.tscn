@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://db6t1u11y157f"]
+
+[node name="Panel" type="PanelContainer" unique_id=1793561398]
+offset_top = 136.0
+offset_right = 1152.0
+offset_bottom = 648.0
