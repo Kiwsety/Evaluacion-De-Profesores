@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dq7fhp7xedee3" path="res://control.gd" id="1_0fbet"]
 
-[node name="Control" type="Control" unique_id=603310949]
+[node name="Root" type="Control" unique_id=1868849122]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,11 +11,65 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0fbet")
 
-[node name="Button" type="Button" parent="." unique_id=1954909113]
+[node name="Teacher" type="Panel" parent="." unique_id=513282063]
+z_index = -1
 layout_mode = 0
-offset_top = 81.0
-offset_right = 54.0
-offset_bottom = 112.0
-text = "boton"
+offset_right = 1152.0
+offset_bottom = 128.0
 
-[connection signal="pressed" from="Button" to="." method="funcion"]
+[node name="Name" type="LineEdit" parent="Teacher" unique_id=1195119120]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 448.0
+offset_bottom = 48.0
+placeholder_text = "nombre y apellido"
+
+[node name="Year" type="LineEdit" parent="Teacher" unique_id=741395880]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 8.0
+offset_right = 576.0
+offset_bottom = 48.0
+placeholder_text = "año y curso"
+
+[node name="Teacher Selector" type="OptionButton" parent="Teacher" unique_id=1098339484]
+layout_mode = 0
+offset_left = 584.0
+offset_top = 8.0
+offset_right = 1144.0
+offset_bottom = 48.0
+selected = 0
+item_count = 1
+popup/item_0/text = "Maria Vasquez 5°3"
+popup/item_0/id = 0
+
+[node name="Add" type="Button" parent="Teacher" unique_id=1872989489]
+layout_mode = 0
+offset_left = 584.0
+offset_top = 64.0
+offset_right = 653.0
+offset_bottom = 95.0
+text = "Agregar"
+
+[node name="Guardar" type="Button" parent="Teacher" unique_id=828566000]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 64.0
+offset_right = 744.0
+offset_bottom = 95.0
+text = "Guardar"
+
+[node name="Eliminar" type="Button" parent="Teacher" unique_id=1470155784]
+layout_mode = 0
+offset_left = 752.0
+offset_top = 64.0
+offset_right = 872.0
+offset_bottom = 95.0
+text = "Eliminar"
+
+[node name="Panel" type="PanelContainer" parent="." unique_id=660837688]
+layout_mode = 0
+offset_top = 136.0
+offset_right = 1152.0
+offset_bottom = 648.0
