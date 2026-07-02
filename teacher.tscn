@@ -42,6 +42,7 @@ offset_left = 584.0
 offset_top = 64.0
 offset_right = 653.0
 offset_bottom = 95.0
+tooltip_text = "Agregar profesor al sistema."
 text = "Agregar"
 
 [node name="Guardar" type="Button" parent="." unique_id=1427929828]
@@ -50,6 +51,7 @@ offset_left = 664.0
 offset_top = 64.0
 offset_right = 744.0
 offset_bottom = 95.0
+tooltip_text = "Actualizar estado del profesor."
 text = "Guardar"
 
 [node name="Eliminar" type="Button" parent="." unique_id=768198472]
@@ -58,6 +60,7 @@ offset_left = 752.0
 offset_top = 64.0
 offset_right = 872.0
 offset_bottom = 95.0
+tooltip_text = "Eliiminar profesor del sistema."
 text = "Eliminar"
 
 [connection signal="item_selected" from="Teacher Selector" to="." method="teacher_selected"]

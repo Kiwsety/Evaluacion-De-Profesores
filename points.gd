@@ -4,7 +4,7 @@ var Points = 0
 var self_teacher_points = [0,0,0]
 var teachers_points = []
 
-const max_elements = 3 # Cantidad de opciones maximas que podes tener
+const max_elements = 7 # Cantidad de opciones maximas que podes tener
 const n = 10 # Puntage maximo
 
 func _process(delta: float) -> void:
@@ -17,7 +17,7 @@ func _process(delta: float) -> void:
 	
 
 	Points = i
-	$PointCount.text = str(int(round(Points/30.0 * n))) + "/" + str(n) + " puntos totales"
+	$PointCount.text = str(int(round(Points/70.0 * n))) + "/" + str(n) + " puntos totales"
 
 
 func save_point_data(idx):

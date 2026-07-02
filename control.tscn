@@ -4,6 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://c7kxx0j4kkjjt" path="res://teacher.tscn" id="2_qtu10"]
 [ext_resource type="PackedScene" uid="uid://db6t1u11y157f" path="res://points.tscn" id="3_ee4bf"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
+font_size = 12
+
+[sub_resource type="LabelSettings" id="LabelSettings_yf5fn"]
+font_size = 8
+
 [node name="Root" type="Control" unique_id=1868849122]
 process_priority = -1
 layout_mode = 3
@@ -24,3 +30,22 @@ anchor_top = 0.20987654
 anchor_bottom = 1.0
 offset_bottom = 0.0
 metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=2034202276]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 599.0
+offset_right = 197.0
+offset_bottom = 636.0
+text = "Codigo : Daniil Kryvulia
+Textos e Interfaz : Dylan Gimenez"
+label_settings = SubResource("LabelSettings_g4v7s")
+
+[node name="Label" type="Label" parent="Label" unique_id=2129729763]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 37.0
+offset_right = 41.0
+offset_bottom = 60.0
+text = "Prohibida la venta de esta aplicación a terceros. La aplicación se entrega de forma gratuita a la secundaria N°32  de Villa Luzuriaga."
+label_settings = SubResource("LabelSettings_yf5fn")

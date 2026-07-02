@@ -2,13 +2,24 @@
 
 [ext_resource type="Script" uid="uid://flwrd80uhrwy" path="res://points.gd" id="1_n31ie"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_n31ie"]
+font_size = 12
+
 [sub_resource type="ButtonGroup" id="ButtonGroup_3d3xj"]
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_n31ie"]
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_sp3hk"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_n31ie"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_al7rb"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_qb2w0"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_n4ywd"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_toqbv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3d3xj"]
 font_size = 32
 
 [node name="Points" type="Panel" unique_id=2097312209]
@@ -29,6 +40,7 @@ offset_top = 8.0
 offset_right = 1144.0
 offset_bottom = 456.0
 split_offsets = PackedInt32Array(0, 0, 0, 0, 0, 0)
+dragging_enabled = false
 
 [node name="Guide" type="VBoxContainer" parent="Panel" unique_id=1992383149]
 layout_mode = 2
@@ -38,7 +50,8 @@ alignment = 1
 [node name="Label" type="Label" parent="Panel/Guide" unique_id=632794195]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Pepe el grillo"
+text = "Indicadores"
+label_settings = SubResource("LabelSettings_n31ie")
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -48,7 +61,9 @@ layout_mode = 2
 [node name="Label2" type="Label" parent="Panel/Guide" unique_id=1320195597]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Jose la hormiga"
+text = "Dominio de 
+contenidos"
+label_settings = SubResource("LabelSettings_n31ie")
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -58,7 +73,8 @@ layout_mode = 2
 [node name="Label3" type="Label" parent="Panel/Guide" unique_id=81417115]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Jose la hormiga"
+text = "Producción integrada"
+label_settings = SubResource("LabelSettings_n31ie")
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -68,7 +84,56 @@ layout_mode = 2
 [node name="Label4" type="Label" parent="Panel/Guide" unique_id=726485790]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Jose la hormiga"
+text = "Autonomía en el trabajo"
+label_settings = SubResource("LabelSettings_n31ie")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSeparator4" type="HSeparator" parent="Panel/Guide" unique_id=1788226341]
+layout_mode = 2
+
+[node name="Label5" type="Label" parent="Panel/Guide" unique_id=1433657280]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Comunicación/
+Argumentación"
+label_settings = SubResource("LabelSettings_n31ie")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSeparator5" type="HSeparator" parent="Panel/Guide" unique_id=1247469803]
+layout_mode = 2
+
+[node name="Label6" type="Label" parent="Panel/Guide" unique_id=612529164]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Condiciones personales
+(Vinculo,comunicación y clima laboral)"
+label_settings = SubResource("LabelSettings_n31ie")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSeparator6" type="HSeparator" parent="Panel/Guide" unique_id=2064500220]
+layout_mode = 2
+
+[node name="Label7" type="Label" parent="Panel/Guide" unique_id=50322759]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Condiciones profesionales
+(Responsabilidades en la gestion pedagógica)"
+label_settings = SubResource("LabelSettings_n31ie")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSeparator7" type="HSeparator" parent="Panel/Guide" unique_id=1327972042]
+layout_mode = 2
+
+[node name="Label8" type="Label" parent="Panel/Guide" unique_id=1867746223]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Desempeño pedagógico general
+(calidad de la enseñanza y acompañamiento)"
+label_settings = SubResource("LabelSettings_n31ie")
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -86,7 +151,7 @@ alignment = 1
 [node name="Label" type="Label" parent="Panel/Option1" unique_id=1806166619]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Opcion 1"
+text = "Requiere refuerzo"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -99,6 +164,7 @@ size_flags_vertical = 3
 offset_transform_enabled = true
 offset_transform_position = Vector2(240, 0)
 offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Presenta dificultades para identificar o aplicar conceptos básicos"
 button_group = SubResource("ButtonGroup_3d3xj")
 icon_alignment = 1
 
@@ -111,6 +177,7 @@ size_flags_vertical = 3
 offset_transform_enabled = true
 offset_transform_position = Vector2(240, 0)
 offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Sus producciones son incompletas o no se ajustan a la propuesta de trabajo"
 button_group = SubResource("ButtonGroup_n31ie")
 icon_alignment = 1
 
@@ -123,7 +190,60 @@ size_flags_vertical = 3
 offset_transform_enabled = true
 offset_transform_position = Vector2(240, 0)
 offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Muestra escado compromiso y requiere supervisión constante"
 button_group = SubResource("ButtonGroup_sp3hk")
+icon_alignment = 1
+
+[node name="HSeparator4" type="HSeparator" parent="Panel/Option1" unique_id=399921868]
+layout_mode = 2
+
+[node name="4" type="CheckBox" parent="Panel/Option1" unique_id=711177800]
+layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Tiene dificultades para expresar o defender sus ideas para luego propiciar admiaje de saberes"
+button_group = SubResource("ButtonGroup_al7rb")
+icon_alignment = 1
+
+[node name="HSeparator5" type="HSeparator" parent="Panel/Option1" unique_id=155803030]
+layout_mode = 2
+
+[node name="5" type="CheckBox" parent="Panel/Option1" unique_id=1279392765]
+layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Presenta dificultades en la comunicacion o el Sostenimiento de un clima de respeto profesional"
+button_group = SubResource("ButtonGroup_qb2w0")
+icon_alignment = 1
+
+[node name="HSeparator6" type="HSeparator" parent="Panel/Option1" unique_id=898082614]
+layout_mode = 2
+
+[node name="6" type="CheckBox" parent="Panel/Option1" unique_id=903006644]
+layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Presenta omisiones frecuentes en plazos de pedidos administrativos y/o cumplimiento de norma vigente"
+button_group = SubResource("ButtonGroup_n4ywd")
+icon_alignment = 1
+
+[node name="HSeparator7" type="HSeparator" parent="Panel/Option1" unique_id=1072711828]
+layout_mode = 2
+
+[node name="7" type="CheckBox" parent="Panel/Option1" unique_id=522358743]
+layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
+tooltip_text = "La propuesta pedagógica resulta insuficiente para los objetivos institucionales"
+button_group = SubResource("ButtonGroup_toqbv")
 icon_alignment = 1
 
 [node name="VSeparator2" type="VSeparator" parent="Panel" unique_id=266421804]
@@ -140,7 +260,8 @@ alignment = 1
 [node name="Label" type="Label" parent="Panel/Option2" unique_id=1439646452]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Opcion 2"
+text = "En Proceso
+(Satisfactorio)"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -153,6 +274,7 @@ size_flags_vertical = 3
 offset_transform_enabled = true
 offset_transform_position = Vector2(240, 0)
 offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Aplica conceptos básicos aunque con algunas imprecisiones"
 button_group = SubResource("ButtonGroup_3d3xj")
 icon_alignment = 1
 
@@ -165,6 +287,7 @@ size_flags_vertical = 3
 offset_transform_enabled = true
 offset_transform_position = Vector2(240, 0)
 offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Realiza producciones que cumplen con las consignas, pero tienen poca profundidad"
 button_group = SubResource("ButtonGroup_n31ie")
 icon_alignment = 1
 
@@ -177,7 +300,60 @@ size_flags_vertical = 3
 offset_transform_enabled = true
 offset_transform_position = Vector2(240, 0)
 offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Requiere orientaciones o asesoramientos periódicos para su desempeño pedagógico"
 button_group = SubResource("ButtonGroup_sp3hk")
+icon_alignment = 1
+
+[node name="HSeparator4" type="HSeparator" parent="Panel/Option2" unique_id=825421636]
+layout_mode = 2
+
+[node name="4" type="CheckBox" parent="Panel/Option2" unique_id=965582719]
+layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Expresa ideas básicas con dificultad en el uso de vocabulario técnico en el desarrollo de actividades"
+button_group = SubResource("ButtonGroup_al7rb")
+icon_alignment = 1
+
+[node name="HSeparator5" type="HSeparator" parent="Panel/Option2" unique_id=1335645651]
+layout_mode = 2
+
+[node name="5" type="CheckBox" parent="Panel/Option2" unique_id=885527584]
+layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Su actitud es colaborativa aunque en ocasiones le cuesta integrarse a la dinámica grupal"
+button_group = SubResource("ButtonGroup_qb2w0")
+icon_alignment = 1
+
+[node name="HSeparator6" type="HSeparator" parent="Panel/Option2" unique_id=1287951203]
+layout_mode = 2
+
+[node name="6" type="CheckBox" parent="Panel/Option2" unique_id=1221192591]
+layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Cumple con los requerimientos aunque requiere seguimiento o recordatorios ocasionales"
+button_group = SubResource("ButtonGroup_n4ywd")
+icon_alignment = 1
+
+[node name="HSeparator7" type="HSeparator" parent="Panel/Option2" unique_id=1766386216]
+layout_mode = 2
+
+[node name="7" type="CheckBox" parent="Panel/Option2" unique_id=1099471724]
+layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
+tooltip_text = "La labor es correcta, pero debe profundizar más en las estrategias de acompañamiento a las trayectorias"
+button_group = SubResource("ButtonGroup_toqbv")
 icon_alignment = 1
 
 [node name="VSeparator3" type="VSeparator" parent="Panel" unique_id=116753490]
@@ -194,7 +370,8 @@ alignment = 1
 [node name="Label" type="Label" parent="Panel/Option3" unique_id=1351586900]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Opcion 3"
+text = "Logrado
+(Excelente)"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -207,6 +384,7 @@ size_flags_vertical = 3
 offset_transform_enabled = true
 offset_transform_position = Vector2(240, 0)
 offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Aplica conceptos claves de su orientación con precisión"
 button_group = SubResource("ButtonGroup_3d3xj")
 icon_alignment = 1
 
@@ -219,6 +397,7 @@ size_flags_vertical = 3
 offset_transform_enabled = true
 offset_transform_position = Vector2(240, 0)
 offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Realiza producciones que relaciona la teoría con la práctica propia de su orientación"
 button_group = SubResource("ButtonGroup_n31ie")
 icon_alignment = 1
 
@@ -231,7 +410,60 @@ size_flags_vertical = 3
 offset_transform_enabled = true
 offset_transform_position = Vector2(240, 0)
 offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Gestiona su tiempo y recursos de manera responsable"
 button_group = SubResource("ButtonGroup_sp3hk")
+icon_alignment = 1
+
+[node name="HSeparator4" type="HSeparator" parent="Panel/Option3" unique_id=1640675663]
+layout_mode = 2
+
+[node name="4" type="CheckBox" parent="Panel/Option3" unique_id=1871729123]
+layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Expresa ideas con claridad utilizando lenguaje técnico del área"
+button_group = SubResource("ButtonGroup_al7rb")
+icon_alignment = 1
+
+[node name="HSeparator5" type="HSeparator" parent="Panel/Option3" unique_id=2072960379]
+layout_mode = 2
+
+[node name="5" type="CheckBox" parent="Panel/Option3" unique_id=254852427]
+layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Muestra disposición al trabajo en equipo, trato profesional con colegas y equipo directivo"
+button_group = SubResource("ButtonGroup_qb2w0")
+icon_alignment = 1
+
+[node name="HSeparator6" type="HSeparator" parent="Panel/Option3" unique_id=1126489218]
+layout_mode = 2
+
+[node name="6" type="CheckBox" parent="Panel/Option3" unique_id=1922954456]
+layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Cumple de forma excelente con los plazos administrativos, entrega de planificación, incompatibilidad horaria y proyectos"
+button_group = SubResource("ButtonGroup_n4ywd")
+icon_alignment = 1
+
+[node name="HSeparator7" type="HSeparator" parent="Panel/Option3" unique_id=183968022]
+layout_mode = 2
+
+[node name="7" type="CheckBox" parent="Panel/Option3" unique_id=1782834155]
+layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(240, 0)
+offset_transform_scale = Vector2(2, 2)
+tooltip_text = "Demuestra compromiso con el aprendizaje de los alumno ajustando de forma efectiva"
+button_group = SubResource("ButtonGroup_toqbv")
 icon_alignment = 1
 
 [node name="PointCount" type="Label" parent="." unique_id=1832004883]
@@ -241,7 +473,7 @@ offset_top = 464.0
 offset_right = 1144.0
 offset_bottom = 509.0
 text = "5"
-label_settings = SubResource("LabelSettings_n31ie")
+label_settings = SubResource("LabelSettings_3d3xj")
 horizontal_alignment = 2
 vertical_alignment = 1
 
