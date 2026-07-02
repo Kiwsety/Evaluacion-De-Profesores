@@ -3,8 +3,6 @@ extends Control
 @onready var TEACHERS = $Teacher
 @onready var POINTS = $Points
 
-@onready var http_request = $HTTPRequest
-
 func _ready() -> void:
 	load_computer()
 	TEACHERS.teacher_selected(-1)

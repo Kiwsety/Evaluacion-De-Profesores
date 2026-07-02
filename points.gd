@@ -17,7 +17,7 @@ func _process(delta: float) -> void:
 	
 
 	Points = i
-	$PointCount.text = str(int(round(Points/70.0 * n))) + "/" + str(n) + " puntos totales"
+	$PointCount.text = str(int(round(Points/7.0 * n))/10.0) + "/" + str(n) + ".0 puntos totales"
 
 
 func save_point_data(idx):
